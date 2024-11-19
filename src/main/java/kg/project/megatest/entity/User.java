@@ -28,6 +28,9 @@ public class User extends Audit<String> {
     @JoinColumn(name = "role_id")
     Role role;
 
+
+    String lol;
+
     public User(String username,  String encode,String name) {
         this.username = username;
         this.password = encode;
